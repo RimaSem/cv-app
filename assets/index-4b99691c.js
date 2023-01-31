@@ -7899,7 +7899,7 @@ function Contacts() {
         /* @__PURE__ */ jsxs("div", { className: "contacts-header", children: [
           /* @__PURE__ */ jsx("h3", { children: "PERSONAL INFO" }),
           /* @__PURE__ */ jsx(
-            Icon,
+            Icon.Icon,
             {
               onClick: () => setEditInfo((prev) => !prev),
               className: "edit-btn",
@@ -7952,7 +7952,7 @@ function Contacts() {
         ] }) : /* @__PURE__ */ jsxs(Fragment, { children: [
           /* @__PURE__ */ jsxs("div", { className: "info-row", children: [
             /* @__PURE__ */ jsx(
-              Icon,
+              Icon.Icon,
               {
                 className: "icon",
                 path: mdiAccount,
@@ -7964,7 +7964,7 @@ function Contacts() {
           ] }),
           /* @__PURE__ */ jsxs("div", { className: "info-row", children: [
             /* @__PURE__ */ jsx(
-              Icon,
+              Icon.Icon,
               {
                 className: "icon",
                 path: mdiEmailOutline,
@@ -7976,7 +7976,7 @@ function Contacts() {
           ] }),
           /* @__PURE__ */ jsxs("div", { className: "info-row", children: [
             /* @__PURE__ */ jsx(
-              Icon,
+              Icon.Icon,
               {
                 className: "icon",
                 path: mdiPhone,
@@ -7988,7 +7988,7 @@ function Contacts() {
           ] }),
           /* @__PURE__ */ jsxs("div", { className: "info-row", children: [
             /* @__PURE__ */ jsx(
-              Icon,
+              Icon.Icon,
               {
                 className: "icon",
                 path: mdiMapMarker,
@@ -8018,7 +8018,7 @@ function About() {
     /* @__PURE__ */ jsxs("div", { className: "about-header", children: [
       /* @__PURE__ */ jsx("h3", { children: "ABOUT ME" }),
       /* @__PURE__ */ jsx(
-        Icon,
+        Icon.Icon,
         {
           onClick: () => setEditInfo((prev) => !prev),
           className: "content-edit-btn",
@@ -8067,7 +8067,7 @@ function ExperienceCard(props) {
       " ",
       /* @__PURE__ */ jsxs("div", { className: "icons", children: [
         /* @__PURE__ */ jsx(
-          Icon,
+          Icon.Icon,
           {
             onClick: () => setEditInfo((prev) => !prev),
             className: "content-edit-btn",
@@ -8077,7 +8077,7 @@ function ExperienceCard(props) {
           }
         ),
         /* @__PURE__ */ jsx(
-          Icon,
+          Icon.Icon,
           {
             onClick: () => props.remove(id2),
             className: "content-delete-btn",
@@ -8174,7 +8174,7 @@ function Experience() {
     /* @__PURE__ */ jsxs("div", { className: "experience-header", children: [
       /* @__PURE__ */ jsx("h3", { children: "WORK EXPERIENCE" }),
       /* @__PURE__ */ jsx(
-        Icon,
+        Icon.Icon,
         {
           onClick: () => addToArray(nanoid()),
           className: "add-new-card",
@@ -8211,7 +8211,7 @@ function EducationCard(props) {
       " ",
       /* @__PURE__ */ jsxs("div", { className: "icons", children: [
         /* @__PURE__ */ jsx(
-          Icon,
+          Icon.Icon,
           {
             onClick: () => setEditInfo((prev) => !prev),
             className: "content-edit-btn",
@@ -8221,7 +8221,7 @@ function EducationCard(props) {
           }
         ),
         /* @__PURE__ */ jsx(
-          Icon,
+          Icon.Icon,
           {
             onClick: () => props.remove(id2),
             className: "content-delete-btn",
@@ -8305,7 +8305,7 @@ function Education() {
     /* @__PURE__ */ jsxs("div", { className: "education-header", children: [
       /* @__PURE__ */ jsx("h3", { children: "EDUCATION" }),
       /* @__PURE__ */ jsx(
-        Icon,
+        Icon.Icon,
         {
           onClick: () => addToArray(nanoid()),
           className: "add-new-card",
@@ -8471,7 +8471,6 @@ var download = {
     };
   });
 })(download);
-const downloadjs = downloadExports;
 /*!
  * html2canvas 1.4.1 <https://html2canvas.hertzen.com>
  * Copyright (c) 2022 Niklas von Hertzen <https://hertzen.com>
@@ -16312,7 +16311,7 @@ function App() {
       scale: 2
     });
     const dataURL = canvas.toDataURL("image/png");
-    downloadjs(dataURL, "my_cv.png", "image/png");
+    downloadExports.downloadjs(dataURL, "my_cv.png", "image/png");
   };
   return /* @__PURE__ */ jsxs("div", { className: "App", children: [
     /* @__PURE__ */ jsx(Header, { downloadCV }),
