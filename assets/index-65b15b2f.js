@@ -8073,7 +8073,7 @@ function ExperienceCard(props) {
             className: "content-edit-btn",
             path: mdiPenPlus,
             size: 0.8,
-            color: "#f4f4f4"
+            color: "#048500"
           }
         ),
         /* @__PURE__ */ jsx(
@@ -8083,7 +8083,7 @@ function ExperienceCard(props) {
             className: "content-delete-btn",
             path: mdiTrashCanOutline,
             size: 0.8,
-            color: "#f4f4f4"
+            color: "red"
           }
         )
       ] })
@@ -8180,7 +8180,7 @@ function Experience() {
           className: "add-new-card",
           path: mdiPlusCircleOutline,
           size: 1.1,
-          color: "#f4f4f4"
+          color: "#9fcfac"
         }
       )
     ] }),
@@ -8217,7 +8217,7 @@ function EducationCard(props) {
             className: "content-edit-btn",
             path: mdiPenPlus,
             size: 0.8,
-            color: "#f4f4f4"
+            color: "#048500"
           }
         ),
         /* @__PURE__ */ jsx(
@@ -8227,7 +8227,7 @@ function EducationCard(props) {
             className: "content-delete-btn",
             path: mdiTrashCanOutline,
             size: 0.8,
-            color: "#f4f4f4"
+            color: "red"
           }
         )
       ] })
@@ -8311,7 +8311,7 @@ function Education() {
           className: "add-new-card",
           path: mdiPlusCircleOutline,
           size: 1.1,
-          color: "#f4f4f4"
+          color: "#9fcfac"
         }
       )
     ] }),
@@ -8471,6 +8471,7 @@ var download = {
     };
   });
 })(download);
+const downloadjs = downloadExports;
 /*!
  * html2canvas 1.4.1 <https://html2canvas.hertzen.com>
  * Copyright (c) 2022 Niklas von Hertzen <https://hertzen.com>
@@ -16311,7 +16312,7 @@ function App() {
       scale: 2
     });
     const dataURL = canvas.toDataURL("image/png");
-    downloadExports.downloadjs(dataURL, "my_cv.png", "image/png");
+    downloadjs(dataURL, "my_cv.png", "image/png");
   };
   return /* @__PURE__ */ jsxs("div", { className: "App", children: [
     /* @__PURE__ */ jsx(Header, { downloadCV }),
