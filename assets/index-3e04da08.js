@@ -7865,10 +7865,10 @@ function Contacts() {
     setEditInfo((prev) => !prev);
   }
   function showEditBtn() {
-    document.querySelector("svg path").style.cssText = "fill: #a6ffbe";
+    document.querySelector(".edit-btn path").style.cssText = "fill: #a6ffbe";
   }
   function hideEditBtn() {
-    document.querySelector("svg path").style.cssText = "fill: #2d2d2f";
+    document.querySelector(".edit-btn path").style.cssText = "fill: #2d2d2f";
   }
   return /* @__PURE__ */ jsxs(
     "section",
@@ -7905,7 +7905,7 @@ function Contacts() {
               className: "edit-btn",
               path: mdiPenPlus,
               size: 0.8,
-              color: "#2d2d2f"
+              color: "#a6ffbe"
             }
           )
         ] }),
@@ -16308,6 +16308,7 @@ var parseBackgroundColor = function(context, element, backgroundColorOverride) {
 };
 function App() {
   const downloadCV = async () => {
+    document.querySelector(".edit-btn path").style.cssText = "fill: #2d2d2f";
     document.querySelectorAll(".content-edit-btn path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
     document.querySelectorAll(".content-delete-btn path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
     document.querySelectorAll(".add-new-card path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
