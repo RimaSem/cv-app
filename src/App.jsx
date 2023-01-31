@@ -6,6 +6,7 @@ import html2canvas from "html2canvas";
 
 export default function App() {
   const downloadCV = async () => {
+    document.querySelector(".edit-btn path").style.cssText = "fill: #2d2d2f";
     document
       .querySelectorAll(".content-edit-btn path")
       .forEach((item) => (item.style.cssText = "fill: #f4f4f4"));

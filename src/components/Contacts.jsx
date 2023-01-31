@@ -28,11 +28,11 @@ export default function Contacts() {
   }
 
   function showEditBtn() {
-    document.querySelector("svg path").style.cssText = "fill: #a6ffbe";
+    document.querySelector(".edit-btn path").style.cssText = "fill: #a6ffbe";
   }
 
   function hideEditBtn() {
-    document.querySelector("svg path").style.cssText = "fill: #2d2d2f";
+    document.querySelector(".edit-btn path").style.cssText = "fill: #2d2d2f";
   }
 
   return (
@@ -63,7 +63,7 @@ export default function Contacts() {
           className="edit-btn"
           path={mdiPenPlus}
           size={0.8}
-          color="#2d2d2f"
+          color="#a6ffbe"
         />
       </div>
       <div className="contacts-content">
