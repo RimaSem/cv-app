@@ -1,0 +1,23 @@
+header {
+  background-color: #2d2d2f;
+  color: #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.7rem;
+  }
+
+  button {
+    height: 70%;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+}

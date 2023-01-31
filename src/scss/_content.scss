@@ -1,0 +1,95 @@
+.content-container {
+  background-color: #f4f4f4;
+  color: #2d2d2f;
+  flex: 1;
+  padding: 1.5rem;
+
+  .about-container {
+    .about-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #939393d0;
+
+      h3 {
+        margin: 0;
+        color: #6f6e6e;
+        font-weight: 500;
+        padding-bottom: 0.4rem;
+      }
+
+      .content-edit-btn {
+        cursor: pointer;
+
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      textarea {
+        margin-top: 0.5rem;
+        border: 1px solid rgb(167, 167, 167);
+        padding-left: 0.5rem;
+        border-radius: 5px;
+      }
+
+      button {
+        height: 2rem;
+        border-radius: 5px;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+        border: none;
+        background-color: #a6ffbe;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .experience-container,
+  .education-container {
+    font-size: 0.9rem;
+
+    p {
+      margin: 0;
+    }
+
+    .experience-header,
+    .education-header {
+      padding-bottom: 0.4rem;
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #939393d0;
+
+      h3 {
+        margin: 0;
+        color: #6f6e6e;
+        font-weight: 500;
+      }
+
+      .add-new-card {
+        cursor: pointer;
+
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+}
