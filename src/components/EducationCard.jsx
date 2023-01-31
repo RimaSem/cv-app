@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Icon from "@mdi/react";
+import { Icon } from "@mdi/react";
 import { mdiPenPlus, mdiTrashCanOutline } from "@mdi/js";
 
 export default function EducationCard(props) {
@@ -34,14 +34,14 @@ export default function EducationCard(props) {
                 className="content-edit-btn"
                 path={mdiPenPlus}
                 size={0.8}
-                color="#f4f4f4"
+                color="#048500"
               />
               <Icon
                 onClick={() => props.remove(id)}
                 className="content-delete-btn"
                 path={mdiTrashCanOutline}
                 size={0.8}
-                color="#f4f4f4"
+                color="red"
               />
             </div>
           </div>

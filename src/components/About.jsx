@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Icon from "@mdi/react";
+import { Icon } from "@mdi/react";
 import { mdiPenPlus } from "@mdi/js";
 
-export default function About({ showBtn, hideBtn, btnName }) {
+export default function About() {
   const [editInfo, setEditInfo] = useState(false);
   const [description, setDescription] = useState(
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, doloribus quibusdam iste culpa incidunt illum fugit vel deleniti neque similique, maiores saepe quam beatae, molestias natus modi alias sint voluptas eveniet reiciendis! Reiciendis aperiam molestiae debitis eveniet, numquam officia consequuntur nisi velit neque alias sunt nobis, commodi fugiat, explicabo doloribus."
@@ -24,7 +24,7 @@ export default function About({ showBtn, hideBtn, btnName }) {
           className="content-edit-btn"
           path={mdiPenPlus}
           size={0.8}
-          color="#f4f4f4"
+          color="#048500"
         />
       </div>
       {editInfo ? (

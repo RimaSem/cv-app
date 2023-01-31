@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Icon from "@mdi/react";
+import { Icon } from "@mdi/react";
 import { mdiPlusCircleOutline } from "@mdi/js";
 import EducationCard from "./EducationCard";
 import { nanoid } from "nanoid";
@@ -45,7 +45,7 @@ export default function Education() {
           className="add-new-card"
           path={mdiPlusCircleOutline}
           size={1.1}
-          color="#f4f4f4"
+          color="#9fcfac"
         />
       </div>
       {displayCards}

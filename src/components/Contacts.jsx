@@ -1,6 +1,6 @@
 import samplePhoto from "../img/cv_img.jpg";
 import { useState } from "react";
-import Icon from "@mdi/react";
+import { Icon } from "@mdi/react";
 import {
   mdiPenPlus,
   mdiAccount,
