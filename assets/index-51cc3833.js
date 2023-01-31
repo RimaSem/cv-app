@@ -8024,7 +8024,7 @@ function About() {
           className: "content-edit-btn",
           path: mdiPenPlus,
           size: 0.8,
-          color: "#f4f4f4"
+          color: "#048500"
         }
       )
     ] }),
@@ -16308,6 +16308,9 @@ var parseBackgroundColor = function(context, element, backgroundColorOverride) {
 };
 function App() {
   const downloadCV = async () => {
+    document.querySelectorAll(".content-edit-btn path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
+    document.querySelectorAll(".content-delete-btn path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
+    document.querySelectorAll(".add-new-card path").forEach((item) => item.style.cssText = "fill: #f4f4f4");
     const canvas = await html2canvas(document.querySelector(".cv-container"), {
       scale: 2
     });
