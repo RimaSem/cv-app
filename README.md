@@ -11,3 +11,5 @@ Includes photo, personal info, about, work experience and education sections, wh
 - JavaScript 
 - HTML & SCSS
 - ViteJS
+
+![cv_builder3](https://user-images.githubusercontent.com/98835134/221944738-834e8712-9b2e-44e1-8bc0-c9ccdc8d7997.png)
